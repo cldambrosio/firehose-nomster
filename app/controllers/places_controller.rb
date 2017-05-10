@@ -1,7 +1,7 @@
 class PlacesController < ApplicationController
 
   def index
-    @places = Place.paginate(:page => params[:page], :per_page => 6)
+    @places = Place.paginate(:page => params[:page], :per_page => 8)
   end
 
   def new
@@ -9,8 +9,12 @@ class PlacesController < ApplicationController
   end
 
   def create
-    Place.create(place_params)
-    redirect_to root_path
+    @place = Place.create!(place_params)
+    redirect_to @place
+  end
+
+  def show
+    @place = Place.find_by_id(params[:id])
   end
 
   private
