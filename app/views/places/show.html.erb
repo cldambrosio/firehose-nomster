@@ -26,13 +26,17 @@
     src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDNHZ4dznKqdYTueC7TTSjqnEYMeDL6wMc&callback=initMap">
     </script>
 
-  <div id="map"></div>
+    <div id="map"></div>
   <% end %>
   <br />
-  <%= @place.photos.each do |photo| %>
-    <%= image_tag photo.picture %>
-    <%= photo.caption %>
-  <% end %>  
+  <div class="row">
+    <% @place.photos.each do |photo| %>
+      <div class="col-sm-6 col-md-4 col-lg-3 img-thumbnail">
+        <img class="img-fluid" <%= image_tag photo.picture %>
+        <%= photo.caption %>
+      </div>
+    <% end %>
+  </div>
   <br />
   <br />
   <div class="float-right vertical-align">
