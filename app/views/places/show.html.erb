@@ -53,10 +53,10 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Add a Comment</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
-        <h4 class="modal-title" id="myModalLabel">Add a Comment</h4>
       </div>
       <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
         <div class="modal-body">
@@ -86,10 +86,10 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Add a Photo</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">×</span>
         </button>
-        <h4 class="modal-title" id="myModalLabel">Add a Photo</h4>
       </div>
       <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
         <div class="modal-body">
@@ -106,13 +106,13 @@
 </div>
 <div class="col-10 offset-1">
   <h1 class="float-left">Photos</h1>
-  <!-- Button trigger modal -->
+<!-- Button trigger modal -->
   <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
     Add a Photo
   </button>
 </div>
 <div class="clear"></div>
-<br />
+<br /> 
 
 <div class="row">
   <% @place.comments.each do |comment| %>
