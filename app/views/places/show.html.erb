@@ -49,7 +49,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal-comment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -74,7 +74,7 @@
 <div class="col-10 offset-1">
   <h1 class="float-left">Comments</h1>
   <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
+  <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal-comment">
     Add a Comment
   </button>
 </div>
@@ -82,7 +82,7 @@
 <br />
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal-photo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -98,7 +98,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+          <%= f.submit "Add Photo", class: 'btn btn-primary' %>
         </div>
       <% end %>
     </div>
@@ -107,7 +107,7 @@
 <div class="col-10 offset-1">
   <h1 class="float-left">Photos</h1>
 <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
+  <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal-photo">
     Add a Photo
   </button>
 </div>
