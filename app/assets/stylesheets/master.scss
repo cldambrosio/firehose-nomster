@@ -44,6 +44,11 @@ h1, h1 > a {
 
 .pagination {
   margin: 10px auto 50px auto;
+  justify-content: center;
+}
+
+.pagination > a, .disabled {
+  border: 1px solid #e2e2e2;
 }
 
 .vertical-align {
