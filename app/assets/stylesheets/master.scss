@@ -28,6 +28,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+h1, h1 > a {
+  font-family: 'cabinsketchregular', cursive;
+  letter-spacing: -0.4px;
+  font-weight: 600;
+  color: #aa1e25;
+}
+
 .navbar-inverse .navbar-brand {
   color: #ff8563;
   font-family: 'cabinsketchregular', cursive;
@@ -75,6 +82,23 @@ blockquote p {
 
 .clear {
   clear: both;
+}
+
+.img-thumbnail {
+  max-height: 220px;
+  overflow: auto;
+}
+
+.thumbnail {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo-caption {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  text-align: center;
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
