@@ -93,9 +93,12 @@ blockquote p {
   overflow: auto;
 }
 
+.inner-img {
+  border-radius: 4px;
+}
+
 .photo-caption {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  text-align: center;
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
